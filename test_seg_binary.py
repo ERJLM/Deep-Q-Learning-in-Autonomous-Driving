@@ -5,11 +5,11 @@ from torchmetrics import JaccardIndex
 from models import SegModel_Binary
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--model', default='model-binary-2048-8.pth')
+parser.add_argument('--model', default='model-seg-binary.pth')
 parser.add_argument('--dataset', default='BDD10K_Binary')
 parser.add_argument('--batchsize', type=int, default=2)
-parser.add_argument('--imgsize', type=int, default=2048)
-parser.add_argument('--nregions', type=int, default=8)
+parser.add_argument('--imgsize', type=int, default=1024)
+parser.add_argument('--nregions', type=int, default=4)
 args = parser.parse_args()
 
 import albumentations as A
