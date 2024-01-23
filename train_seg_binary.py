@@ -10,8 +10,8 @@ parser.add_argument('--output', default='model-seg-binary.pth')
 parser.add_argument('--dataset', default='BDD10K_Binary')
 parser.add_argument('--epochs', type=int, default=1000)
 parser.add_argument('--batchsize', type=int, default=32)
-parser.add_argument('--imgsize', type=int, default=2048)
-parser.add_argument('--nregions', type=int, default=8)
+parser.add_argument('--imgsize', type=int, default=1024)
+parser.add_argument('--nregions', type=int, default=4)
 args = parser.parse_args()
 
 import albumentations as A
