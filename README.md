@@ -1,5 +1,6 @@
 # Deep-Q-Learning-in-Autonomous-Driving
-
+## About the project:
+Check the project report.
 ## Instructions
 - Run the train_seg_binary code to generate and train the segmentation model (it will generate a model named "model-seg-binary"). The model will train for 1000 epochs.
 - Run the test_seg_binary code to test the model's accuracy (optional but highly recommended)
