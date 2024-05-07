@@ -4,6 +4,6 @@ The main goal of the project is to find a resource-efficient approach to region 
 There are used two models, a segmentation model and a model trained by DQL, responsible for choosing the next area to segment.
 The chosen architecture for the segmentation model was DeepLabV3 with a ResNet50 backbone, a well-established model known for its effectiveness in segmentation tasks. The segmentation model operates in binary mode. 
 For the Deep Q-Network (DQN), the model used in the DQL, is used a customized convolutional neural network (CNN). 
-The objective of the agent is to utilize the DQN to select the optimal order for segmenting 16 regions. Following this selection, the segmentation model would be employed to segment each region. The agent's task was to prioritize the most valuable regions.
+The objective of the agent is to utilize the DQN to select the optimal order for segmenting 16 regions, prioritizing the most valuable ones. Following each selection, the segmentation model is employed to segment the selected region.
 
 
