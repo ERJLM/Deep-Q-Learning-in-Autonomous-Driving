@@ -1,7 +1,7 @@
 # Deep-Q-Learning-in-Autonomous-Driving
 ## About the project:
-Check the project report ("Curricular_Internship_Report.pdf").
-## Instructions
-- Run the train_seg_binary code to generate and train the segmentation model (it will generate a model named "model-seg-binary"). The model will train for 1000 epochs.
-- Run the test_seg_binary code to test the model's accuracy (optional but highly recommended)
-- Run the agent_bynary code with the model's name as an argument, for example: "python agent_binary --model model-seg-binary"
+There are used two models, a segmentation model and a model trained by DQL, responsible for choosing the next area to segment.
+The chosen architecture for the segmentation model was DeepLabV3 with a ResNet50 backbone, a well-established model known for its effectiveness in segmentation tasks. The segmentation model was binary. For the Deep Q-Network (DQN), the model used in the DQL, I built a customized convolutional neural network (CNN). 
+The objective was for the agent to utilize the DQN to select the optimal order for segmenting 16 regions. Following this selection, the segmentation model would be employed to segment each region. The agent's task was to prioritize the most valuable regions.
+
+
